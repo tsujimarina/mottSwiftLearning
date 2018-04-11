@@ -135,8 +135,8 @@ override func viewDidLoad() {
 //画像を設定する処理
 func setImageName(_ imageName: String) {
     self.imageName = imageName
-    if let _ = uiImageView2 {
-      uiImageView2.image = UIImage(named: imageName)
+    if let _ = imageView {
+      imageView.image = UIImage(named: imageName)
     }
   }
 ```  
@@ -149,7 +149,7 @@ func setImageName(_ imageName: String) {
 </br>
 
 #### 7.ページ遷移の操作  
-* UIPageViewControllerDataSourceをextensionし、遷移後のデータを設定する  
+* UIPageViewControllerDataSourceをextensionし、遷移後の処理を追加  
 ``` swift
 extension PageViewController : UIPageViewControllerDataSource {
 
@@ -166,7 +166,7 @@ extension PageViewController : UIPageViewControllerDataSource {
     }
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-      
+
         //右にスワイプ
         if viewControllerIndex == 0 {
             return nil
