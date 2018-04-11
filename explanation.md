@@ -25,7 +25,7 @@ storyboardとviewControllerを扱うことで画像を配置した画面遷移�
 
 </br>
 
-* Device Orientationでportraitを外す ==> ** 横画面指定に **  
+* Device Orientationでportraitを外す ==>  横画面指定に   
 <img src="image/portrait.png" width=50%></img>  
 
 </br>
